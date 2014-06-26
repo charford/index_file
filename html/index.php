@@ -22,6 +22,11 @@
 
         mysqli_close($con);
         ?>
+
+        <?php
+                $connection = memcache_connect('memcached');
+                var_dump($connection);
+        ?>
         <?php phpinfo() ?>
 </body>
 </html>
